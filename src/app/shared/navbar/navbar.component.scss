@@ -1,0 +1,10 @@
+
+.nav-link-main {
+  color: #172b4d;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-link-main {
+    color: #ffffff;
+  }
+}

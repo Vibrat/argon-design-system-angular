@@ -28,7 +28,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">Components</span>
+            <span class="nav-link-inner--text">
+              <a class="nav-link-main" [routerLink]="['/home']">Home</a>
+            </span>
           </a>
           <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
@@ -65,14 +67,34 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+            <span class="nav-link-inner--text">
+              <a class="nav-link-main" [routerLink]="['/portfolios']">Portfolios</a>
+            </span>
           </a>
-          <div class="dropdown-menu">
-            <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
-          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text">
+              <a class="nav-link-main" [routerLink]="['/portfolios']">Blog</a>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text">
+              <a class="nav-link-main" [routerLink]="['/team']">Team</a>
+            </span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text">
+              <a class="nav-link-main" [routerLink]="['/contact']">Team</a>
+            </span>
+          </a>
         </li>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
@@ -80,18 +102,6 @@
           <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
             <i class="fa fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Facebook</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
-            <i class="fa fa-instagram"></i>
-            <span class="nav-link-inner--text d-lg-none">Instagram</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
-            <i class="fa fa-twitter-square"></i>
-            <span class="nav-link-inner--text d-lg-none">Twitter</span>
           </a>
         </li>
         <li class="nav-item">
@@ -105,7 +115,7 @@
             <span class="btn-inner--icon">
               <i class="fa fa-cloud-download mr-2"></i>
             </span>
-            <span class="nav-link-inner--text">Download</span>
+            <span class="nav-link-inner--text">Brochure</span>
           </a>
         </li>
       </ul>
