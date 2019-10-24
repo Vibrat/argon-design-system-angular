@@ -1,0 +1,13 @@
+<div
+  class="ad-section row"
+  [conver-height]="height"
+  #background>
+  <div class="container container-lg">
+    <div class="ad-wrapper">
+      <div class="title small italic">{{ titleSmall }}</div>
+      <div class="title large">{{ titleLarge }}</div>
+      <div class="title medium">{{ titleMedium }}</div>
+      <button (click)="navigate()" class="btn btn-1 btn-danger" type="button">{{ buttonText }}</button>
+    </div>
+  </div>
+</div>

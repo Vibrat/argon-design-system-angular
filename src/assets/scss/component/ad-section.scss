@@ -1,0 +1,78 @@
+.ad-section {
+  height: 100%;
+  background-size: 300px auto;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-origin: content-box;
+  padding-right: 20px;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    .ad-wrapper {
+      width: 100%;
+      padding: 12px 12px;
+
+      * {
+        margin: 20px 0;
+      }
+    }
+
+    .title {
+
+      &.small {
+        font: italic 24px/28px Helvetica Neue;
+      }
+
+      &.medium {
+        font: normal 32px/36px Helvetica Neue;
+        letter-spacing: 0;
+        color: #0A3353;
+      }
+
+      &.large {
+        font: bold 48px/60px Helvetica Neue;
+        letter-spacing: 0;
+        color: #0A3353;
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+  .ad-section {
+    height: 100%;
+    background-size: 600px auto;
+
+    .container {
+
+      .ad-wrapper {
+        width: 50%;
+        .title {
+          margin: 12px 0;
+
+          &.small {
+            font: italic 20px/24px Helvetica Neue;
+            letter-spacing: 0;
+            color: #0A3353;
+            font-style: italic;
+          }
+
+          &.medium {
+            font: normal 40px/49px Helvetica Neue;
+            letter-spacing: 0;
+            color: #0A3353;
+          }
+
+          &.large {
+            font: bold 60px/74px Helvetica Neue;
+            letter-spacing: 0;
+            color: #0A3353;
+          }
+        }
+      }
+    }
+  }
+}
