@@ -1,99 +1,39 @@
 <section class="section bg-secondary">
   <div class="container container-lg">
     <div class="row row-grid align-items-center">
-      <div class="col-lg-4 col-md-6 flip-card">
-        <div class="card bg-default shadow border-0 flip-card-inner">
-          <div class="flip-card-front">
-            <div class="image-container">
-                <img src="./assets/img/theme/img-1-1200x1000.jpg" class="card-img-top">
-            </div>
-            <blockquote class="card-blockquote">
-              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                <polygon points="0,52 583,95 0,95" class="fill-default" />
-                <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
-              </svg>
-              <h4 class="display-3 font-weight-bold text-white">Marketing Execution</h4>
-            </blockquote>
-          </div>
-          <div class="flip-card-back">
-              <blockquote class="card-blockquote">
-                <div class="content">
-                  <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                    <polygon points="0,52 583,95 0,95" class="fill-default" />
-                    <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
-                  </svg>
-                  <h4 class="display-3 font-weight-bold text-white">Marketing Execution</h4>
-                  <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                </div>
-                <div class="action">
-                  <button type="button" class="btn btn-primary">See More</button>
-                </div>
-              </blockquote>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 flip-card">
-          <div class="card bg-default shadow border-0 flip-card-inner">
-            <div class="flip-card-front">
-              <div class="image-container">
-                  <img src="./assets/img/theme/img-1-1200x1000.jpg" class="card-img-top">
-              </div>
-              <blockquote class="card-blockquote">
-                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                  <polygon points="0,52 583,95 0,95" class="fill-default" />
-                  <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
-                </svg>
-                <h4 class="display-3 font-weight-bold text-white">Marketing Execution</h4>
-              </blockquote>
-            </div>
-            <div class="flip-card-back">
-                <blockquote class="card-blockquote">
-                  <div class="content">
+      <ng-container *ngFor="let badge of data">
+          <div class="col-lg-4 col-md-6 flip-card">
+              <div class="card bg-default shadow border-0 flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="image-container">
+                      <img src="{{ badge.image }}" class="card-img-top">
+                  </div>
+                  <blockquote class="card-blockquote">
                     <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
                       <polygon points="0,52 583,95 0,95" class="fill-default" />
                       <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
                     </svg>
-                    <h4 class="display-3 font-weight-bold text-white">Marketing Execution</h4>
-                    <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                  </div>
-                  <div class="action">
-                    <button type="button" class="btn btn-primary">See More</button>
-                  </div>
-                </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 flip-card">
-            <div class="card bg-default shadow border-0 flip-card-inner">
-              <div class="flip-card-front">
-                <div class="image-container">
-                    <img src="./assets/img/theme/img-1-1200x1000.jpg" class="card-img-top">
-                </div>
-                <blockquote class="card-blockquote">
-                  <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                    <polygon points="0,52 583,95 0,95" class="fill-default" />
-                    <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
-                  </svg>
-                  <h4 class="display-3 font-weight-bold text-white">Marketing Execution</h4>
-                </blockquote>
-              </div>
-              <div class="flip-card-back">
-                  <blockquote class="card-blockquote">
-                    <div class="content">
-                      <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                        <polygon points="0,52 583,95 0,95" class="fill-default" />
-                        <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
-                      </svg>
-                      <h4 class="display-3 font-weight-bold text-white">Marketing Execution</h4>
-                      <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                    </div>
-                    <div class="action">
-                      <button type="button" class="btn btn-primary">See More</button>
-                    </div>
+                    <h4 class="display-3 font-weight-bold text-white">{{ badge.title }}</h4>
                   </blockquote>
+                </div>
+                <div class="flip-card-back">
+                    <blockquote class="card-blockquote">
+                      <div class="content">
+                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
+                          <polygon points="0,52 583,95 0,95" class="fill-default" />
+                          <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
+                        </svg>
+                        <h4 class="display-3 font-weight-bold text-white">{{ badge.title }}</h4>
+                        <p class="text-white">{{ badge.description }}</p>
+                      </div>
+                      <div class="action">
+                        <button  (click)="onBadgeClick(badge.button.link)" type="button" class="btn btn-primary">{{ badge.button.text }}</button>
+                      </div>
+                    </blockquote>
+                </div>
               </div>
             </div>
-          </div>
+      </ng-container>
     </div>
   </div>
 </section>

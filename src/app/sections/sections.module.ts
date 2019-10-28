@@ -22,7 +22,7 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { AdSectionComponent } from "./ad-section/ad-section.component";
 import { BadgeBlogComponent } from "./badge-blog/badge-blog.component";
-
+import { LogoSection } from  "./logo-section/logo-section.component";
 
 
 @NgModule({
@@ -41,7 +41,8 @@ import { BadgeBlogComponent } from "./badge-blog/badge-blog.component";
     NgbdModalComponent,
     NgbdModalContent,
     AdSectionComponent,
-    BadgeBlogComponent
+    BadgeBlogComponent,
+    LogoSection
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -56,7 +57,8 @@ import { BadgeBlogComponent } from "./badge-blog/badge-blog.component";
   exports:[
     SectionsComponent,
     AdSectionComponent,
-    BadgeBlogComponent
+    BadgeBlogComponent,
+    LogoSection
   ]
 })
 export class SectionsModule { }
