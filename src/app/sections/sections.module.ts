@@ -21,7 +21,7 @@ import { VersionsSectionComponent } from './versions-section/versions-section.co
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { AdSectionComponent } from "./ad-section/ad-section.component";
-
+import { BadgeBlogComponent } from "./badge-blog/badge-blog.component";
 
 
 
@@ -40,7 +40,8 @@ import { AdSectionComponent } from "./ad-section/ad-section.component";
     VersionsSectionComponent,
     NgbdModalComponent,
     NgbdModalContent,
-    AdSectionComponent
+    AdSectionComponent,
+    BadgeBlogComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -55,6 +56,7 @@ import { AdSectionComponent } from "./ad-section/ad-section.component";
   exports:[
     SectionsComponent,
     AdSectionComponent,
+    BadgeBlogComponent
   ]
 })
 export class SectionsModule { }
