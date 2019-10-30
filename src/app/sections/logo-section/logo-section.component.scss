@@ -1,0 +1,42 @@
+.logo-section {
+  padding: 24px 0;
+
+  .row {
+    margin: 12px auto;
+    &.heading {
+      margin-bottom: 32px;
+    }
+  }
+
+  .main-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .main-desc {
+    text-align: center;
+    &.lead {
+      margin-top: 0;
+      text-transform: none;
+    }
+  }
+
+  .logo-item {
+    padding: 16px 6px;
+    .title,
+    .image-container {
+      text-align: center;
+      img:hover {
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        transform: rotateY(180deg);
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      color: #0A3353
+    }
+  }
+}

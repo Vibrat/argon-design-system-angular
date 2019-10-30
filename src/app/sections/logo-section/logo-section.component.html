@@ -1,8 +1,20 @@
 <section class="logo-section">
   <div class="container container-lg">
-    <div class="col-sm-3 col-6">
-      <small class="d-block text-uppercase font-weight-bold mb-4">Circle Image</small>
-      <img alt="Circle image" class="img-fluid rounded-circle shadow" src="./assets/img/theme/team-2-800x800.jpg" style="width: 150px;">
+    <div class="row heading">
+      <div class="col-12 main-title display-3">Our Partner</div>
+      <div class="col-12 main-desc lead">We connect and bring value to you</div>
+    </div>
+    <div class="row content">
+      <ng-container *ngFor="let item of data">
+        <div class="col-sm-3 col-6 logo-item">
+          <div class="title">
+            <small class="d-block text-uppercase font-weight-bold mb-4">{{ item.title }}</small>
+          </div>
+          <div class="image-container">
+          <img alt="{{ item.img.alt }}" class="img-fluid rounded-circle shadow" src="{{ item.img.src }}" style="width: 150px;">
+          </div>
+        </div>
+      </ng-container>
     </div>
   </div>
 </section>
